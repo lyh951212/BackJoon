@@ -1,8 +1,12 @@
-a ,b = map(int,input().split())
+score = (int)input()
 
-if a>b:
-    print(">")
-elif a == b :
-    print("==")
+if score >= 90 && score <=100:
+    print("A")
+elif score >= 80 && scroe <= 89:
+    print("B")
+elif score >= 70 && scroe <= 79:
+    print("C")
+elif score >= 60 && scroe <= 69:
+    print("D")
 else:
-    print("<")
+    print("F")
