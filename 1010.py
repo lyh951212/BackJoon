@@ -2,19 +2,19 @@
 #   b개의 지역에 a개의 다리를 놓을 수 있는 경우의 수는 bCa
 #   조합은 n개중 r개를 선택하는 경우의 수 중 중복이 없는 것이다.
 
-# def factorial(n):
-#     num = 1
-#     for i in range(1, n+1):
-#         num *= i
-#     return num
+def factorial(n):
+    num = 1
+    for i in range(1, n+1):
+        num *= i
+    return num
 
 
-# T = int(input())
+T = int(input())
 
-# for _ in range(T):
-#     n, m = map(int, input().split())
-#     bridge = factorial(m) // (factorial(n) * factorial(m - n))
-#     print(bridge)
+for _ in range(T):
+    n, m = map(int, input().split())
+    bridge = factorial(m) // (factorial(n) * factorial(m - n))
+    print(bridge)
 
 # ===================================================================
 
