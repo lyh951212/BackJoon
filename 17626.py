@@ -2,10 +2,10 @@
 
 import math
 
-n = int(input())
+n = int(input())  # 12
 
-dp = [0 for _ in range(n+1)]
-dp[1] = 1
+dp = [0 for _ in range(n+1)] # 0, 0, 0, 0 , ...(13개)
+dp[1] = 1 # 1
 
 for i in range(2, n+1):
     if math.sqrt(i) % 1 == 0: # 결과가 정수다
